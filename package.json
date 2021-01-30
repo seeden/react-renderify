@@ -1,0 +1,53 @@
+{
+  "name": "react-renderify",
+  "description": "Get async response from your component. Great helper for your modals or another async staff",
+  "private": false,
+  "license": "MIT",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.ts",
+  "exports": "dist/index.modern.js",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": "false",
+  "author": {
+    "name": "Zlatko Fedor",
+    "email": "hey@zlatkofedor.com",
+    "url": "https://www.zlatkofedor.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/seeden/react-renderify.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "async",
+    "modal",
+    "modals",
+    "promise",
+    "promisify",
+    "asyncify",
+    "portal",
+    "function",
+    "await",
+    "render",
+    "renderify"
+  ],
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "dependencies": {
+    "react-use": "^15.3.8"
+  },
+  "devDependencies": {
+    "microbundle": "^0.13.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0"
+  }
+}
