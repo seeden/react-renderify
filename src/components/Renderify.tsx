@@ -1,4 +1,4 @@
-import React, { useState, ReactNode, forwardRef, useImperativeHandler, createContext } from 'react';
+import React, { useState, ReactNode, forwardRef, useImperativeHandle, createContext } from 'react';
 import { useUpdate } from 'react-use';
 
 export const RenderifyContext = createContext<{
@@ -63,7 +63,7 @@ function Renderify(props: Props, ref) {
     reject(error);
   }
 
-  useImperativeHandler(ref, () => ({
+  useImperativeHandle(ref, () => ({
     render: handleRender,
   }));
 
