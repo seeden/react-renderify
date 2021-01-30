@@ -5,6 +5,7 @@ This library will help you to manage your work with async functions and react co
 ## Example
 Simple example with your modal library.
 
+UserProfile.tsx
 ```tsx
 import { Renderify } from 'react-renderify';
 import ConfirmationDialog from './ConfirmationDialog';
@@ -51,6 +52,7 @@ function UserProfile(props: Props) {
 }
 ```
 
+ConfirmationDialog.tsx
 ```tsx
 import { ReactNode } from 'react';
 import { useResponse } from 'react-renderify';
