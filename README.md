@@ -7,7 +7,7 @@ Simple example with your modal library.
 
 UserProfile.tsx
 ```tsx
-import { Renderify } from 'react-renderify';
+import { Renderify, useRenderify } from 'react-renderify';
 import ConfirmationDialog from './ConfirmationDialog';
 
 type Props = {
