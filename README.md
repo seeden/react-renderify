@@ -19,11 +19,11 @@ This library is fixing all mentioned problems.
 I hope that you will enjoy it.
 
 # Support
-If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden)
+If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden) or
 
 [![](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-1.svg)](https://www.buymeacoffee.com/seeden)
 
-Thank you
+Thank you.
 
 
 ## Example
@@ -174,8 +174,8 @@ function UserProfile(props: Props) {
 ```
 
 # Support
-If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden)
+If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden) or
 
 [![](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-1.svg)](https://www.buymeacoffee.com/seeden)
 
-Thank you
+Thank you.
