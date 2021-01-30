@@ -17,8 +17,14 @@ Here are few examples:
 
 This library is fixing all mentioned problems.
 I hope that you will enjoy it.
-If you like my work, do not forget to sponsor my profile github:[seeden].
+
+# Support
+If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden)
+
+[![](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-1.svg)](https://www.buymeacoffee.com/seeden)
+
 Thank you
+
 
 ## Example
 Simple example with your modal library.
@@ -166,3 +172,10 @@ function UserProfile(props: Props) {
   );
 }
 ```
+
+# Support
+If you like my work, do not forget to [:heart: Sponsor me on GitHub](https://github.com/sponsors/seeden)
+
+[![](https://www.buymeacoffee.com/assets/img/guidelines/download-assets-1.svg)](https://www.buymeacoffee.com/seeden)
+
+Thank you
