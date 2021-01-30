@@ -2,6 +2,24 @@
 Get an async response from your component.
 This library will help you to manage your work with async functions and react components. Components inside component Renderify are visible only when the render function was called. Everything inside renderify component will be hidden again when you resolve the response from your component using useResponse hook.
 
+## Why I created this library?
+I am using modals in all my projects and working with it can be taff.
+I had multiple conditions:
+1. react context needs to work correctly in the modals
+2. use modals as async functions
+3. pass properties directly to modal components as standard react properties
+4. support for TypeScript and no missing properties
+
+To get working version with all of these conditions is not very easy because you need to write a lot of code. We also had multiple ways how to render modals and not all of them are right.
+Here are few examples:
+1. When you use any ModalsProvider which is at the root of your application you are not able to use react context inside your modals. Because you will lose context from children components. (Modals will be rendered outside of this context)
+2. When you have multiple modals in your component and you are trying to synchronize the visible state for all of them you need to write a lot of code
+
+This library is fixing all mentioned problems.
+I hope that you will enjoy it.
+If you like my work, do not forget to sponsor my profile github:[seeden].
+Thank you
+
 ## Example
 Simple example with your modal library.
 
