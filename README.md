@@ -97,7 +97,7 @@ export default function ConfirmationDialog(props: Props) {
 ```
 
 ## Example without useRenderify
-Because useRenderify is just a wrapper around useRef. You can use useRef and ignore useRenderify. useRenderify will add more functionality in the future and it is recommended to use it. One great feature will be the automatic wait for the first render. 
+Because useRenderify is just a wrapper around useRef. You can use useRef and ignore useRenderify. useRenderify will add more functionality in the future and it is recommended to use it. One great feature will be the automatic wait for the first render. The second feature will be passing props to the component.
 
 UserProfile.tsx
 ```tsx
