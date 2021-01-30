@@ -3,7 +3,7 @@
   "description": "Get async response from your component. Great helper for your modals or another async staff",
   "private": false,
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "source": "src/index.ts",
   "main": "dist/index.ts",
   "exports": "dist/index.modern.js",
