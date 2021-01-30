@@ -36,8 +36,8 @@
     "renderify"
   ],
   "scripts": {
-    "build": "microbundle --jsxImportSource",
-    "dev": "microbundle --jsxImportSource watch"
+    "build": "microbundle --jsx React.createElement",
+    "dev": "microbundle --jsx React.createElement watch"
   },
   "dependencies": {
     "react-use": "^15.3.8"
