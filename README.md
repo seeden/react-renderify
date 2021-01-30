@@ -94,5 +94,57 @@ export default function ConfirmationDialog(props: Props) {
     </Modal>
   );
 }
+```
 
+## Example without useRenderify
+Because useRenderify is just a wrapper around useRef. You can use useRef and ignore useRenderify. useRenderify will add more functionality in the future and it is recommended to use it. One great feature will be the automatic wait for the first render. 
+
+UserProfile.tsx
+```tsx
+import { useRef } from 'react';
+import { Renderify } from 'react-renderify';
+import ConfirmationDialog from './ConfirmationDialog';
+
+type Props = {
+  user: {
+    username: string;
+  };
+};
+
+function UserProfile(props: Props) {
+  const { 
+    user: {
+      username,
+    },
+  } = props;
+
+  const deleteUserRef = useRef(null);
+
+  async function handleDeleteUser() {
+    if (deleteUserRef.current) {
+      const isDeleteConfirmed = await deleteUserRef.current.render();
+
+      if (isDeleteConfirmed) {
+        // TODO: call delete service and remove user with username: username
+      }
+    }
+  }
+
+
+  return (
+    <>
+      <h1>Hi {username}</h1>
+
+      <button onClick={handleDeleteUser} type="button">
+        Delete User
+      </button>
+
+      <Renderify ref={deleteUserRef}>
+        <ConfirmationDialog>
+          Do you want to remove user: {username}?
+        </ConfirmationDialog>
+      </Renderify>
+    <>
+  );
+}
 ```
