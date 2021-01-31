@@ -47,10 +47,10 @@ function UserProfile(props: Props) {
     },
   } = props;
 
-  const deleteUserConfirmation = useRenderify();
+  const [showDeleteUserConfirmation, refRenderify] = useRenderify();
 
   async function handleDeleteUser() {
-    const isDeleteConfirmed = await deleteUserConfirmation.render();
+    const isDeleteConfirmed = await showDeleteUserConfirmation();
 
     if (isDeleteConfirmed) {
       // TODO: call delete service and remove user with username: username
@@ -66,7 +66,7 @@ function UserProfile(props: Props) {
         Delete User
       </button>
 
-      <Renderify ref={deleteUserConfirmation.ref}>
+      <Renderify ref={refRenderify}>
         <ConfirmationDialog>
           Do you want to remove user: {username}?
         </ConfirmationDialog>
